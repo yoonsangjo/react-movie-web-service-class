@@ -1,12 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Movie.css';
+import { Link } from 'react-router-dom';
 
-function Movie({ rank, movieNm, openDt }) {
+function Movie({ id, rank, movieNm, openDt }) {
   return (
     <div className="movie">
       <div className="movie__info">
-        [RANK{rank}] {movieNm}
+        <Link
+          to={`/movie/${id}`}
+          state={{
+            id,
+            rank,
+            movieNm,
+            openDt,
+          }}
+        >
+          [RANK{rank}] {movieNm}
+        </Link>
       </div>
       <div className="movie__openDt">{openDt}</div>
     </div>

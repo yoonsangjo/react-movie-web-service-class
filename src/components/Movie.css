@@ -1,4 +1,6 @@
 .movie {
+  /* display: flex;
+  justify-content: center; */
   margin-top: 20px;
 }
 .movie__info {
