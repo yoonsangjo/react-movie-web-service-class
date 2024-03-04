@@ -8,8 +8,8 @@ import Detail from './routes/Detail';
 function App() {
   return (
     <>
-      {/* <Router> */}
-      <Router basename={window.location.href.includes('local') ? '' : `${process.env.PUBLIC_URL}`}>
+      <Router>
+        {/* <Router basename={window.location.href.includes('local') ? '' : `${process.env.PUBLIC_URL}`}> */}
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
