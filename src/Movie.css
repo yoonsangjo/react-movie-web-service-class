@@ -1,0 +1,11 @@
+.movie {
+  margin-top: 20px;
+}
+.movie__info {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.movie__openDt {
+  font-size: 12px;
+  opacity: 0.3;
+}
